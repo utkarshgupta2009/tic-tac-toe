@@ -43,7 +43,8 @@ void input(int o)//passing player number as input argument
     //checking input value is valid or not 
     if (assign>9||assign<0){
                 cout<<"ENTER VALID NUMBER: "<<endl;
-                input(o);//if input is invalid then calling the input function again
+                count--;
+                //input(o);//if input is invalid then calling the input function again
             }
  
     for(z;z<count;z++){
@@ -55,11 +56,14 @@ void input(int o)//passing player number as input argument
                 }
                 
                 else{
+
                     checking[z]=assign;//putting the input value into the array
                     break;
                 }
                 
-    }    
+    }
+    
+    
     }
 
     
@@ -85,6 +89,7 @@ cout<<"                PLAYER 1= 0               PLAYER 2= X"<<endl;
 cout<<"                                             "<<endl;
 
 structure();
+
 
 while(count<=10){
         if(count%2==0){
@@ -196,5 +201,4 @@ while(count<=10){
             }
 
 };
-
 return 0;}
