@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdlib.h>
+#include<conio.h>
 using namespace std;
 
 char a='1' , b='2' , c='3' , d='4' , e='5' , f='6' , g='7' , h='8' , i='9'; //declaring all the positional variables
@@ -15,7 +16,8 @@ void input(int o)//passing player number as input argument
                 cout<<" "<<endl;
                 cout<<"PLAYER 1 WINS"<<endl;  
                 cout<<" "<<endl;
-                exit(0);
+                getch();
+                abort();
 }
 
     //checking winner condition for player 2
@@ -23,7 +25,8 @@ void input(int o)//passing player number as input argument
                 cout<<" "<<endl;
                 cout<<"PLAYER 2 WINS"<<endl;
                 cout<<" "<<endl;
-                exit(0);
+                getch();
+                abort();
             }
     
     //checking draw condition
@@ -31,7 +34,8 @@ void input(int o)//passing player number as input argument
         cout<<" "<<endl;
         cout<<"IT IS A TIE, NO ONE WINS"<<endl;
         cout<<" "<<endl;
-        exit(0);
+        getch();
+        abort();
     }
 
     //getting input by player
@@ -201,4 +205,7 @@ while(count<=10){
             }
 
 };
+
+
+
 return 0;}
